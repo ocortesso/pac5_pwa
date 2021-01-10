@@ -1,0 +1,99 @@
+{
+  "configVersion": 1,
+  "timestamp": 1610282822938,
+  "index": "/Thrones/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/Thrones/favicon.ico",
+        "/Thrones/index.html",
+        "/Thrones/main.165a1c9423ff3d9a892a.js",
+        "/Thrones/manifest.webmanifest",
+        "/Thrones/polyfills.35a5ca1855eb057f016a.js",
+        "/Thrones/runtime.acf0dec4155e77772545.js",
+        "/Thrones/styles.3ff695c00d717f2d2a11.css"
+      ],
+      "patterns": [
+        "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.0-beta1\\/dist\\/css\\/bootstrap\\.min\\.css"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/Thrones/assets/CSS/animate.css",
+        "/Thrones/assets/icons/icon-128x128.png",
+        "/Thrones/assets/icons/icon-144x144.png",
+        "/Thrones/assets/icons/icon-152x152.png",
+        "/Thrones/assets/icons/icon-192x192.png",
+        "/Thrones/assets/icons/icon-384x384.png",
+        "/Thrones/assets/icons/icon-512x512.png",
+        "/Thrones/assets/icons/icon-72x72.png",
+        "/Thrones/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "images-api",
+      "patterns": [
+        "http:\\/\\/www\\.omdbapi\\.com\\/\\?t=Game%20of%20Thrones&apikey=b7ff6b1[^/]*[^/]*"
+      ],
+      "strategy": "performance",
+      "maxSize": 10,
+      "maxAge": 3600000,
+      "timeoutMs": 1000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/Thrones/assets/CSS/animate.css": "3dc70f1a3c29089a27418c9ce431cb439f41a5ad",
+    "/Thrones/assets/icons/icon-128x128.png": "bdb2821de132b47631ca50057b7436f19a5acba6",
+    "/Thrones/assets/icons/icon-144x144.png": "9ce7d53f92b47818411485ce5db79ec19d969838",
+    "/Thrones/assets/icons/icon-152x152.png": "4689daa340b2af1a38e95d12d85ca9768efdfbd1",
+    "/Thrones/assets/icons/icon-192x192.png": "c73236630d7287846fe1366e4533418a1b8db402",
+    "/Thrones/assets/icons/icon-384x384.png": "a0f76d2f3d44ef424313909d9029f5f94baf6ce8",
+    "/Thrones/assets/icons/icon-512x512.png": "f273922dfaf69efa9dfd028d3506e147ffa9ac10",
+    "/Thrones/assets/icons/icon-72x72.png": "262ac4344e41d573f7c5a03bf944e8f65236637f",
+    "/Thrones/assets/icons/icon-96x96.png": "788887c732d669cc8e7f104caba1b2ad1bf8ca75",
+    "/Thrones/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/Thrones/index.html": "4891894050be75f61152545602d57a32b536381a",
+    "/Thrones/main.165a1c9423ff3d9a892a.js": "e16e5dd5d9be47bb82b6c7fcfaee1c9d2516d8c5",
+    "/Thrones/manifest.webmanifest": "e7f5dea75ab3250f4753a2ff410ebb5b48d1b88e",
+    "/Thrones/polyfills.35a5ca1855eb057f016a.js": "578360d24ce37383f261c7ef63b1f822d28e8dde",
+    "/Thrones/runtime.acf0dec4155e77772545.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/Thrones/styles.3ff695c00d717f2d2a11.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

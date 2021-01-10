@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>{{this.episodes['Title']}}</h1>
+    <h2>Season {{this.episodes['Season']}}</h2>
+    <ul class="list-group">
+        <a *ngFor="let episode of episodes['Episodes']" [routerLink]="['/episode',episode.Episode]" class="list-group-item list-group-item-action animate__animated animate__bounce animate__faeIn">
+          {{episode.Episode}} - {{episode.Title}}
+        </a>
+    </ul>
+</div>

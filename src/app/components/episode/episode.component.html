@@ -1,0 +1,16 @@
+<div class="container mt-5">
+    <div *ngIf="episode" class="row animate__animated animate__bouce animate__fadeIn">
+        <div class="col-md-9">
+            <h1>{{episode.Title}}</h1>
+            <p><strong>Episode:</strong> {{episode.Episode}}</p>
+            <p><strong>Actors:</strong> {{episode.Actors}}</p>
+            <p><strong>director:</strong> {{episode.Director}}</p>
+            <p><strong>Plot:</strong> {{episode.Plot}}</p>
+            <img style="width: 100%; height: auto;" class="rounded" src="{{episode.Poster}}" alt="">
+        </div>
+        <div class="col-md-3">
+            <a class="btn btn-danger" routerLink='/'>Back</a>
+        </div>
+    </div>
+</div>
+
